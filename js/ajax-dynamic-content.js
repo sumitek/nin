@@ -5,7 +5,7 @@ function ajax_loadContent(divId,url)
 {if(enableCache&&jsCache[url]){document.getElementById(divId).innerHTML=jsCache[url];ajax_parseJs(document.getElementById(divId))
 evaluateCss(document.getElementById(divId))
 return;}
-var ajaxIndex=dynamicContent_ajaxObjects.length;document.getElementById(divId).innerHTML='<img src=assets/tabs/loading.gif border=0>';dynamicContent_ajaxObjects[ajaxIndex]=new sack();if(url.indexOf('?')>=0){dynamicContent_ajaxObjects[ajaxIndex].method='GET';var string=url.substring(url.indexOf('?'));url=url.replace(string,'');string=string.replace('?','');var items=string.split(/&/g);for(var no=0;no<items.length;no++){var tokens=items[no].split('=');if(tokens.length==2){dynamicContent_ajaxObjects[ajaxIndex].setVar(tokens[0],tokens[1]);}}
+var ajaxIndex=dynamicContent_ajaxObjects.length;document.getElementById(divId).innerHTML='Loading...';dynamicContent_ajaxObjects[ajaxIndex]=new sack();if(url.indexOf('?')>=0){dynamicContent_ajaxObjects[ajaxIndex].method='GET';var string=url.substring(url.indexOf('?'));url=url.replace(string,'');string=string.replace('?','');var items=string.split(/&/g);for(var no=0;no<items.length;no++){var tokens=items[no].split('=');if(tokens.length==2){dynamicContent_ajaxObjects[ajaxIndex].setVar(tokens[0],tokens[1]);}}
 url=url.replace(string,'');}
 dynamicContent_ajaxObjects[ajaxIndex].requestFile=url;dynamicContent_ajaxObjects[ajaxIndex].onCompletion=function(){ajax_showContent(divId,ajaxIndex,url);};dynamicContent_ajaxObjects[ajaxIndex].runAJAX();}
 function ajax_parseJs(obj)
