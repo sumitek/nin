@@ -13,8 +13,12 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" /> 
 <link rel="stylesheet" href="css/magnific-popup.css"> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/ajax.js"></script>
-<script type="text/javascript" src="js/ajax-dynamic-content.js"></script>
+<script>
+    $(function(){
+      $("#hticker").load("inc_hticker.txt");
+      $("#newz").load("inc_news.htm");
+    });
+</script>
 <style type="text/css">
 	#content a.im-checkout-btn,
 	#content a.im-powered-link {color: #FFFFFF;}
@@ -77,7 +81,7 @@
    </div></a>
  </div>
 <div class="box"><h2>News</h2>
-   <div id="newz">Loading...</div>
+   <span id="newz"></span>
    <p>&nbsp;</p>
    <p align="center"><a href="inc_anti-ragging.html" class="button red large ajax-popup">Anti-Ragging Policy</a></p>
  </div>
@@ -183,8 +187,7 @@ $(document).ready(function() {
 		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
 	});
 });
-ajax_loadContent('newz','inc_news.htm');
-ajax_loadContent('hticker','inc_hticker.txt');
+
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
