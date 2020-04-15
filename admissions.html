@@ -13,8 +13,12 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" /> 
 <link rel="stylesheet" href="css/magnific-popup.css"> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/ajax.js"></script>
-<script type="text/javascript" src="js/ajax-dynamic-content.js"></script>
+<script>
+    $(function(){
+      $("#hticker").load("inc_hticker.txt");
+      $("#newz").load("inc_news.htm");
+    });
+</script>
 </head>
 <body onload="makeItMove('container','userAction','textItem',-61);">
 <div id="wrap">
@@ -23,7 +27,7 @@
  <div id="ticker">
 	<!-- ticker content -->
 	<marquee direction="left" scrollamount="3" onmouseout="this.start()" onmouseover="this.stop()" height="200">
-	 <span id="hticker"><b>For Admissions Enquiry in G.N.M., B.Sc. nursing, P.B.B.Sc nursing, M.Sc nursing, please use our chat box below.</b> Our admission team will be happy to help you. OR, Email us at helpdesknin@gmail.com &bull; <a href="inc_fraud-alert.htm" class="button red large ajax-popup">Fraud Alert</a></span>
+	 <span id="hticker"></span>
 	</marquee>
 	<!--ul id="ticker01">
 		<li>We are pleased to announce that we are selected as <span>SSR for GFATM</span> &bull; <span> Admission Open 2013-14</span> M.Sc.(N), B.Sc.(N), P.B.B.Sc.(N), GNM </li>
@@ -38,11 +42,12 @@
 	<li><a href='about.html'>About us</a></li>
 	<li><a href='faculty.html'>Faculty</a></li>
 	<li><a href='courses.html'>Courses</a></li>
+	<li><a href='classes.html' class='new'>Online Classes</a></li>
 	<li><a href='facilities.html'>Facilities</a></li>
 	<li><a href='admissions.html'>Admissions</a></li>
 	<li><a href='achievements.html'>Achievements</a></li>
 	<li><a href='gallery.html'>Gallery</a></li>
-	<li><a href='downloads.html'>Downloads</a></li>
+	<!-- <li><a href='downloads.html'>Downloads</a></li> -->
 	<li><a href='contact.html'>Contact us</a></li>
  </ul>
 </div> 
@@ -73,7 +78,7 @@
    </div></a>
  </div>
 <div class="box"><h2>News</h2>
-   <div id="newz">Loading...</div>
+   <span id="newz"></span>
    <p>&nbsp;</p>
    <p align="center"><a href="inc_anti-ragging.html" class="button red large ajax-popup">Anti-Ragging Policy</a></p>
  </div>
