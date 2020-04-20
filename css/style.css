@@ -2,6 +2,19 @@
 #nav ul li a.new, #nav ul li a.new:visited { background: url(new_icon.gif) no-repeat right -2px; }
 #nav ul li a.new:hover { background: #FFF none; }
 #sidebar .bigbutton {margin: 5px auto 15px; width: 250px;}
-#sidebar .bigbutton a { font-size: 1.2em; text-transform: uppercase; padding: 5px 15px; background-color: #C00; color: #FFF; border: inset 2px #F00; border-radius: 3px; text-decoration: none; }
+#sidebar .bigbutton a { font-size: 1.2em; text-transform: uppercase; padding: 5px 15px; /* background-color: #C00;*/ color: #FFF; border: inset 2px #F00; border-radius: 3px; text-decoration: none; }
 
 #sidebar .bigbutton a::after { content: 'ONLINE APPLICATION OPEN';}
+
+/* The element to apply the animation to */
+#sidebar .bigbutton a {
+  background-color: #F00;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {background-color: #F00;}
+  50% {background-color: #ffd280;}
+  100% {background-color: #e66000;}
+}
