@@ -5,6 +5,7 @@
 #sidebar .bigbutton a { font-size: 1.2em; text-transform: uppercase; padding: 5px 15px; /* background-color: #C00;*/ color: #FFF; border: inset 2px #F00; border-radius: 3px; text-decoration: none; }
 
 #sidebar .bigbutton a::after { content: 'ONLINE APPLICATION FOR ADMISSION OPEN NOW'; text-align: center;}
+.htopmargin h4 {margin-top: 1.6em;}
 
 /* The element to apply the animation to */
 #sidebar .bigbutton a {
