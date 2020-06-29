@@ -22,3 +22,5 @@
   to {background-color: #a733ff;}
 }
 small {color: #CCC;}
+.alert {background-color: #F00; color: #FFF;}
+.info {background-color: #369; color: #FFF;}
