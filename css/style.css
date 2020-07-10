@@ -31,4 +31,5 @@ small {color: #999;}
 .fancybox-slide--iframe .fancybox-content {
     background: #fff;
     width: 60% !important;
+    height: 650px !important;
 }
