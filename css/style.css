@@ -3,7 +3,7 @@
 #nav ul li a.new:hover { background: #FFF none; }
 
 #sidebar .bigbutton {margin: 5px auto 15px; width: 250px;}
-#sidebar .bigbutton a::after { content: 'ONLINE APPLICATION FOR ADMISSION OPEN NOW'; text-align: center;}
+#sidebar .bigbutton a::after { content: 'ONLINE ENQUIRY'; text-align: center;}
 .htopmargin h4 {margin-top: 1.6em;}
 
 /* The element to apply the animation to */
@@ -28,3 +28,8 @@ small {color: #999;}
     color: #FFF;
 }
 .info {background-color: #369; color: #FFF;}
+.fancybox-slide--iframe .fancybox-content {
+    background: #fff;
+    width: 60% !important;
+    height: 650px !important;
+}
