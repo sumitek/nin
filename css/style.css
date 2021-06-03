@@ -23,7 +23,7 @@ body{background:#FFF url(../images/bg.jpg) repeat-x;margin:0;padding:0;font-size
   to {background-color: #a733ff;}
 }
 small {color: #999;}
-.button {border-radius: 3px;}
+.button { border-radius: 5px; padding: 7px 10px; display: inline-block; }
 .alert {
     background-color: crimson;
     color: #FFF;
