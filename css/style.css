@@ -4,7 +4,7 @@ body{background:#FFF url(../images/bg.jpg) repeat-x;margin:0;padding:0;font-size
 #nav ul li a.new:hover { background: #FFF none; }
 
 #sidebar .bigbutton {margin: 5px auto 15px; width: 250px;}
-#sidebar .bigbutton a::after { content: 'ONLINE ADMISSION FORM'; text-align: center;}
+#sidebar .bigbutton a::after { content: 'ONLINE APPLICATION FORM'; text-align: center;}
 .htopmargin h4 {margin-top: 1.6em;}
 
 /* The element to apply the animation to */
